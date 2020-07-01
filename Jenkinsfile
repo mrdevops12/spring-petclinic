@@ -1,7 +1,7 @@
 pipeline {
    agent any
    stages {
-       stage("git cline"){
+       stage("repo clone"){
            steps {
                git branch: 'main', url: 'https://github.com/mrdevops12/spring-petclinic.git'
            }
