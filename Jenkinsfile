@@ -6,11 +6,21 @@ pipeline {
                git branch: 'main', url: 'https://github.com/mrdevops12/spring-petclinic.git'
            }
        }
-       stage("Package") {
+       stage("clean") {
           steps {
-              sh "mvn package"
-          } 
-       }
+              sh "mvn clean"   
+            } 
+          }
+        stage("compile") {
+          steps {
+            sh "mvn compile"
+            }  
+          }
+        stage("package") {
+          steps {
+            sh "mvn package"
+          }
+         }   
 
    }
 }
