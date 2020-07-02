@@ -1,7 +1,7 @@
 pipeline {
    agent any
    stages {
-    stage("run parallel"){
+    stage("clone the remote repo"){
            steps {
                git branch: 'main', url: 'https://github.com/mrdevops12/spring-petclinic.git'
            }
