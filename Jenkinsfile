@@ -2,8 +2,8 @@ pipeline {
    agent any
    parameters {
        choice (
-          choices: ['clean','compile','package','noneed']
-          name: 'MVNTARGETS'
+          choices: ['clean','compile','package','noneed'],
+          name: 'MVNTARGETS',
           description:'Please select the Mavne targets')
          }
 
