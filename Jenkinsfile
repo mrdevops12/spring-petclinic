@@ -29,6 +29,7 @@ pipeline {
 			 sh "echo ${pom.version}"
 			 sh "echo ${pom.parent.version}"
 			 sh "echo ${pom.name}"
+                         sh "echo ${pom.java.version}"
 			 }
 		}
 	}	 
